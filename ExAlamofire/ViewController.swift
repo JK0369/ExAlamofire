@@ -9,15 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var label: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let request = LoginRequest(userName: "name", password: "1234")
-        LoginAPI.login(request: request) { succeed, failed in
-            if let succeed = succeed {
-                print(succeed)
-            }
-        }
     }
 
+    @IBAction func didTapCallAPIButton(_ sender: Any) {
+        let request = PredictAgeRequest(name: textField.text ?? "")
+        PredictAgeAPI.predict(request: request) { [weak self] succeed, failed in
+            guard let succeed = succeed else { return }
+            self?.label.text = "\(succeed.name)이름, 예측 = \(succeed.age)살"
+        }
+    }
 }

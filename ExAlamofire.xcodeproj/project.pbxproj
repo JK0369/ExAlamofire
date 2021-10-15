@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E07B1802271A037900300035 /* PredictAgeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1801271A037900300035 /* PredictAgeRequest.swift */; };
+		E07B1804271A039F00300035 /* PredictAgeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1803271A039F00300035 /* PredictAgeResponse.swift */; };
+		E07B1806271A03C400300035 /* PredictAgeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1805271A03C400300035 /* PredictAgeTarget.swift */; };
+		E07B1808271A03CD00300035 /* PredictAgeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1807271A03CD00300035 /* PredictAgeAPI.swift */; };
+		E07B180A271A043200300035 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1809271A043200300035 /* Person.swift */; };
+		E07B180E271A088700300035 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = E07B180D271A088700300035 /* KeychainAccess */; };
+		E07B1810271A089000300035 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B180F271A089000300035 /* KeychainService.swift */; };
+		E07B1812271A08DB00300035 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1811271A08DB00300035 /* Crypto.swift */; };
+		E07B1816271A08FB00300035 /* KeychainAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1815271A08FB00300035 /* KeychainAccessible.swift */; };
+		E07B1818271A0AA500300035 /* MyRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */; };
 		E0F26A632719CBEE0053635A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A622719CBEE0053635A /* AppDelegate.swift */; };
 		E0F26A652719CBEE0053635A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A642719CBEE0053635A /* SceneDelegate.swift */; };
 		E0F26A672719CBEE0053635A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A662719CBEE0053635A /* ViewController.swift */; };
@@ -26,6 +36,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E07B1801271A037900300035 /* PredictAgeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAgeRequest.swift; sourceTree = "<group>"; };
+		E07B1803271A039F00300035 /* PredictAgeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAgeResponse.swift; sourceTree = "<group>"; };
+		E07B1805271A03C400300035 /* PredictAgeTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAgeTarget.swift; sourceTree = "<group>"; };
+		E07B1807271A03CD00300035 /* PredictAgeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAgeAPI.swift; sourceTree = "<group>"; };
+		E07B1809271A043200300035 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E07B180F271A089000300035 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		E07B1811271A08DB00300035 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		E07B1815271A08FB00300035 /* KeychainAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccessible.swift; sourceTree = "<group>"; };
+		E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestInterceptor.swift; sourceTree = "<group>"; };
 		E0F26A5F2719CBEE0053635A /* ExAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F26A622719CBEE0053635A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F26A642719CBEE0053635A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07B180E271A088700300035 /* KeychainAccess in Frameworks */,
 				E0F26A7E2719CCA30053635A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +77,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E07B17FF271A034900300035 /* PredictAge */ = {
+			isa = PBXGroup;
+			children = (
+				E07B1807271A03CD00300035 /* PredictAgeAPI.swift */,
+				E07B1805271A03C400300035 /* PredictAgeTarget.swift */,
+				E07B1800271A037100300035 /* Models */,
+			);
+			path = PredictAge;
+			sourceTree = "<group>";
+		};
+		E07B1800271A037100300035 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E07B1801271A037900300035 /* PredictAgeRequest.swift */,
+				E07B1803271A039F00300035 /* PredictAgeResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E07B180B271A087100300035 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				E07B1815271A08FB00300035 /* KeychainAccessible.swift */,
+				E07B180F271A089000300035 /* KeychainService.swift */,
+				E07B1811271A08DB00300035 /* Crypto.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		E0F26A562719CBEE0053635A = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F26A952719E5DD0053635A /* Domain */,
+				E07B180B271A087100300035 /* Keychain */,
 				E0F26A762719CBFF0053635A /* Network */,
 				E0F26A622719CBEE0053635A /* AppDelegate.swift */,
 				E0F26A642719CBEE0053635A /* SceneDelegate.swift */,
@@ -102,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F26A9A2719E6C30053635A /* Login */,
+				E07B17FF271A034900300035 /* PredictAge */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -140,6 +191,7 @@
 			children = (
 				E0F26A7F2719D6DD0053635A /* TargetType.swift */,
 				E0F26A812719D8090053635A /* HTTPHeaderField.swift */,
+				E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -148,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F26A962719E5E30053635A /* Login.swift */,
+				E07B1809271A043200300035 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +223,7 @@
 			name = ExAlamofire;
 			packageProductDependencies = (
 				E0F26A7D2719CCA30053635A /* Alamofire */,
+				E07B180D271A088700300035 /* KeychainAccess */,
 			);
 			productName = ExAlamofire;
 			productReference = E0F26A5F2719CBEE0053635A /* ExAlamofire.app */;
@@ -201,6 +255,7 @@
 			mainGroup = E0F26A562719CBEE0053635A;
 			packageReferences = (
 				E0F26A7C2719CCA30053635A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E07B180C271A088700300035 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = E0F26A602719CBEE0053635A /* Products */;
 			projectDirPath = "";
@@ -229,18 +284,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07B1808271A03CD00300035 /* PredictAgeAPI.swift in Sources */,
+				E07B1818271A0AA500300035 /* MyRequestInterceptor.swift in Sources */,
 				E0F26A8C2719D9200053635A /* LoginResponse.swift in Sources */,
 				E0F26A972719E5E30053635A /* Login.swift in Sources */,
+				E07B1804271A039F00300035 /* PredictAgeResponse.swift in Sources */,
 				E0F26A822719D8090053635A /* HTTPHeaderField.swift in Sources */,
+				E07B1812271A08DB00300035 /* Crypto.swift in Sources */,
+				E07B1810271A089000300035 /* KeychainService.swift in Sources */,
 				E0F26A992719E6690053635A /* UserDetailsRequest.swift in Sources */,
 				E0F26A872719D8BD0053635A /* LoginTarget.swift in Sources */,
+				E07B1816271A08FB00300035 /* KeychainAccessible.swift in Sources */,
 				E0F26A672719CBEE0053635A /* ViewController.swift in Sources */,
 				E0F26A902719DDFB0053635A /* LoginAPI.swift in Sources */,
 				E0F26A632719CBEE0053635A /* AppDelegate.swift in Sources */,
 				E0F26A9D2719E6E70053635A /* UserDetailsResponse.swift in Sources */,
+				E07B1802271A037900300035 /* PredictAgeRequest.swift in Sources */,
 				E0F26A652719CBEE0053635A /* SceneDelegate.swift in Sources */,
 				E0F26A802719D6DD0053635A /* TargetType.swift in Sources */,
+				E07B180A271A043200300035 /* Person.swift in Sources */,
 				E0F26A8E2719D9400053635A /* LoginRequest.swift in Sources */,
+				E07B1806271A03C400300035 /* PredictAgeTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +526,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E07B180C271A088700300035 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		E0F26A7C2719CCA30053635A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -473,6 +545,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E07B180D271A088700300035 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E07B180C271A088700300035 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		E0F26A7D2719CCA30053635A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0F26A7C2719CCA30053635A /* XCRemoteSwiftPackageReference "Alamofire" */;
