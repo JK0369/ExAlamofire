@@ -17,6 +17,8 @@
 		E07B1812271A08DB00300035 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1811271A08DB00300035 /* Crypto.swift */; };
 		E07B1816271A08FB00300035 /* KeychainAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1815271A08FB00300035 /* KeychainAccessible.swift */; };
 		E07B1818271A0AA500300035 /* MyRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */; };
+		E0BA96A9271AA27A00D13101 /* MyAuthenticationCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA96A8271AA27A00D13101 /* MyAuthenticationCredential.swift */; };
+		E0BA96AB271AA28700D13101 /* MyAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA96AA271AA28700D13101 /* MyAuthenticator.swift */; };
 		E0F26A632719CBEE0053635A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A622719CBEE0053635A /* AppDelegate.swift */; };
 		E0F26A652719CBEE0053635A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A642719CBEE0053635A /* SceneDelegate.swift */; };
 		E0F26A672719CBEE0053635A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A662719CBEE0053635A /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		E07B1811271A08DB00300035 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		E07B1815271A08FB00300035 /* KeychainAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccessible.swift; sourceTree = "<group>"; };
 		E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestInterceptor.swift; sourceTree = "<group>"; };
+		E0BA96A8271AA27A00D13101 /* MyAuthenticationCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthenticationCredential.swift; sourceTree = "<group>"; };
+		E0BA96AA271AA28700D13101 /* MyAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthenticator.swift; sourceTree = "<group>"; };
 		E0F26A5F2719CBEE0053635A /* ExAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F26A622719CBEE0053635A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F26A642719CBEE0053635A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
+		E0BA96A7271AA25B00D13101 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				E0BA96A8271AA27A00D13101 /* MyAuthenticationCredential.swift */,
+				E0BA96AA271AA28700D13101 /* MyAuthenticator.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		E0F26A562719CBEE0053635A = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F26A9F2719E7890053635A /* Bases */,
+				E0BA96A7271AA25B00D13101 /* OAuth */,
 				E0F26A852719D8B50053635A /* APIs */,
 			);
 			path = Network;
@@ -290,6 +304,7 @@
 				E0F26A972719E5E30053635A /* Login.swift in Sources */,
 				E07B1804271A039F00300035 /* PredictAgeResponse.swift in Sources */,
 				E0F26A822719D8090053635A /* HTTPHeaderField.swift in Sources */,
+				E0BA96A9271AA27A00D13101 /* MyAuthenticationCredential.swift in Sources */,
 				E07B1812271A08DB00300035 /* Crypto.swift in Sources */,
 				E07B1810271A089000300035 /* KeychainService.swift in Sources */,
 				E0F26A992719E6690053635A /* UserDetailsRequest.swift in Sources */,
@@ -303,6 +318,7 @@
 				E0F26A652719CBEE0053635A /* SceneDelegate.swift in Sources */,
 				E0F26A802719D6DD0053635A /* TargetType.swift in Sources */,
 				E07B180A271A043200300035 /* Person.swift in Sources */,
+				E0BA96AB271AA28700D13101 /* MyAuthenticator.swift in Sources */,
 				E0F26A8E2719D9400053635A /* LoginRequest.swift in Sources */,
 				E07B1806271A03C400300035 /* PredictAgeTarget.swift in Sources */,
 			);
