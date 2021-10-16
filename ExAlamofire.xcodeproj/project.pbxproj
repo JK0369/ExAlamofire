@@ -19,6 +19,8 @@
 		E07B1818271A0AA500300035 /* MyRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */; };
 		E0BA96A9271AA27A00D13101 /* MyAuthenticationCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA96A8271AA27A00D13101 /* MyAuthenticationCredential.swift */; };
 		E0BA96AB271AA28700D13101 /* MyAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA96AA271AA28700D13101 /* MyAuthenticator.swift */; };
+		E0BA96AD271AAD5800D13101 /* APIEventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA96AC271AAD5800D13101 /* APIEventLogger.swift */; };
+		E0BA96AF271AB0DC00D13101 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA96AE271AB0DC00D13101 /* API.swift */; };
 		E0F26A632719CBEE0053635A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A622719CBEE0053635A /* AppDelegate.swift */; };
 		E0F26A652719CBEE0053635A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A642719CBEE0053635A /* SceneDelegate.swift */; };
 		E0F26A672719CBEE0053635A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F26A662719CBEE0053635A /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 		E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestInterceptor.swift; sourceTree = "<group>"; };
 		E0BA96A8271AA27A00D13101 /* MyAuthenticationCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthenticationCredential.swift; sourceTree = "<group>"; };
 		E0BA96AA271AA28700D13101 /* MyAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthenticator.swift; sourceTree = "<group>"; };
+		E0BA96AC271AAD5800D13101 /* APIEventLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEventLogger.swift; sourceTree = "<group>"; };
+		E0BA96AE271AB0DC00D13101 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E0F26A5F2719CBEE0053635A /* ExAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F26A622719CBEE0053635A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F26A642719CBEE0053635A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				E0F26A7F2719D6DD0053635A /* TargetType.swift */,
 				E0F26A812719D8090053635A /* HTTPHeaderField.swift */,
 				E07B1817271A0AA500300035 /* MyRequestInterceptor.swift */,
+				E0BA96AC271AAD5800D13101 /* APIEventLogger.swift */,
+				E0BA96AE271AB0DC00D13101 /* API.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				E07B1808271A03CD00300035 /* PredictAgeAPI.swift in Sources */,
 				E07B1818271A0AA500300035 /* MyRequestInterceptor.swift in Sources */,
 				E0F26A8C2719D9200053635A /* LoginResponse.swift in Sources */,
+				E0BA96AD271AAD5800D13101 /* APIEventLogger.swift in Sources */,
 				E0F26A972719E5E30053635A /* Login.swift in Sources */,
 				E07B1804271A039F00300035 /* PredictAgeResponse.swift in Sources */,
 				E0F26A822719D8090053635A /* HTTPHeaderField.swift in Sources */,
@@ -316,6 +323,7 @@
 				E0F26A9D2719E6E70053635A /* UserDetailsResponse.swift in Sources */,
 				E07B1802271A037900300035 /* PredictAgeRequest.swift in Sources */,
 				E0F26A652719CBEE0053635A /* SceneDelegate.swift in Sources */,
+				E0BA96AF271AB0DC00D13101 /* API.swift in Sources */,
 				E0F26A802719D6DD0053635A /* TargetType.swift in Sources */,
 				E07B180A271A043200300035 /* Person.swift in Sources */,
 				E0BA96AB271AA28700D13101 /* MyAuthenticator.swift in Sources */,

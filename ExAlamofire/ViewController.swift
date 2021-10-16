@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBAction func didTapCallAPIButton(_ sender: Any) {
         let request = PredictAgeRequest(name: textField.text ?? "")
-        PredictAgeAPI.predict(request: request) { [weak self] succeed, failed in
+        PredictAgeAPI.predictWithEventLogger(request: request) { [weak self] succeed, failed in
             guard let succeed = succeed else { return }
             self?.label.text = "\(succeed.name)이름, 예측 = \(succeed.age)살"
         }

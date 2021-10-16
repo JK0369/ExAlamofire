@@ -10,7 +10,7 @@ import Alamofire
 
 struct PredictAgeAPI {
 
-    /// 이름과 패스워드로 로그인
+    /// 이름과 패스워드로 로그인 + RequestInterceptor 이용
     static func predict(request: PredictAgeRequest, completion: @escaping (_ succeed: Person?, _ failed: Error?) -> Void) {
         AF.request(PredictAgeTarget.predict(request), interceptor: MyRequestInterceptor())
             .responseDecodable { (response: AFDataResponse<PredictAgeResponse>) in
@@ -35,6 +35,19 @@ struct PredictAgeAPI {
                                                                     credential: credential)
 
         AF.request(PredictAgeTarget.predict(request), interceptor: myAuthencitationInterceptor)
+            .responseDecodable { (response: AFDataResponse<PredictAgeResponse>) in
+                switch response.result {
+                case .success(let response):
+                    completion(response.toDomain, nil)
+                case .failure(let error):
+                    completion(nil, error)
+                }
+            }
+    }
+
+    /// 이름과 패스워드로 로그인 + EventLogger 이용
+    static func predictWithEventLogger(request: PredictAgeRequest, completion: @escaping (_ succeed: Person?, _ failed: Error?) -> Void) {
+        API.session.request(PredictAgeTarget.predict(request), interceptor: MyRequestInterceptor())
             .responseDecodable { (response: AFDataResponse<PredictAgeResponse>) in
                 switch response.result {
                 case .success(let response):
